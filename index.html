@@ -10,71 +10,77 @@
     />
     <meta name="description" content="Резюме Асеева Георгия" />
     <title>Резюме - Асеев Георгий</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <img src="профиль.jpg" alt="Фото профиля" width="200px">
-    <h1>Асеев Георгий</h1>
-    <p><strong>Ответственно</strong> подхожу к любому заданию. Всегда выполняю поставленные задачи <strong>в срок</strong>.</p>
-    <p>Знаю английский на уровне <strong>C1</strong>. Владею программами: <em>Adobe Photoshop, Figma, MS Office</em>.</p>
-    <p>Среднее образование: Санкт-Петербург, школа №376 Московского р-на (2013-2020)</p>
-    <p>Высшее образование: Санкт-Петербург, СПбГЭТУ "ЛЭТИ", ИНПРОТЕХ, управление качеством (2020-2024)</p>
-    <br>
-    <a href="https://vk.com/aseevgeorgij" target="_blank">Мой ВКонтакте</a> 
-    |
-    <a href="https://t.me/aseevg" target="_blank">Мой Telegram</a>
-    <ul>
-        <li>Езда на велосипеде</li>
-        <li>Бег</li>
-        <li>Прогулки</li>
-        <li>Учиться Frontend-разработке</li>
-        <li>Разбирать текст музыки</li>
-    </ul> 
-    <table>
-        <thead>
-            <th>Название работы</th>
-            <th>Должность</th>
-            <th>Период</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ВКФест</td>
-                <td>Организатор</td>
-                <td>2019</td>
-            </tr>
-            <tr>
-                <td>Музей Магии</td>
-                <td>Аниматор</td>
-                <td>2019-2020</td>
-            </tr>
-            <tr>
-                <td>Онлайн-школа</td>
-                <td>Преподаватель</td>
-                <td>2021-2022</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <form>
-        <p>Свяжитесь со мной!</p>
-        <div>
-            <label for="text">Ваше Имя</label>
-            <input type="text" id="text" placeholder="Георгий">
+    <div class="container">
+        <div class="info">
+            <img src="профиль.jpg" alt="Фото профиля" width="250px" class="photo">
+            <div class="text">
+                <h1>Асеев Георгий</h1>
+                    <p><strong>Ответственно</strong> подхожу к любому заданию. Всегда выполняю поставленные задачи <strong>в срок</strong>.</p>
+                    <p>Знаю английский на уровне <strong>C1</strong>. Владею программами: <em>Adobe Photoshop, Figma, MS Office</em>.</p>
+                    <p>Среднее образование: Санкт-Петербург, школа №376 Московского р-на (2013-2020)</p>
+                    <p>Высшее образование: Санкт-Петербург, СПбГЭТУ "ЛЭТИ", ИНПРОТЕХ, управление качеством (2020-2024)</p>
+            </div>
         </div>
-        <br>
-        <div>
-            <label for="email">Ваш Email</label>
-            <input type="email" id="email" placeholder="pochta@yandex.ru">
+        <p class="headline social">Мои социальные сети</p>
+        <button class="btn"><a href="https://vk.com/aseevgeorgij" target="_blank" class="link">Мой ВКонтакте</a> </button>
+        <button class="btn"><a href="https://t.me/aseevg" target="_blank" class="link">Мой Telegram</a></button>    
+        <p class="headline">Мои хобби</p>
+        <div class="hobby">
+            <ul class="list">
+                <li>Езда на велосипеде</li>
+                <li>Бег</li>
+                <li>Прогулки</li>
+                <li>Учиться Frontend-разработке</li>
+                <li>Разбирать текст музыки</li>
+            </ul> 
         </div>
-        <br>
-        <div>
-            <label for="message">Ваше Сообщение</label>
-            <br>
-            <textarea name="message" id="message" cols="30" rows="3" placeholder="Пиши прямо здесь" ></textarea>
+        <p class="headline">Опыт работы</p>
+        <div class="job">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>ВКФест</td>
+                        <td>Организатор</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>Музей Магии</td>
+                        <td>Аниматор</td>
+                        <td>2019-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Онлайн-школа</td>
+                        <td>Преподаватель</td>
+                        <td>2021-2022</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <button type="submit">Отправить форму</button>
-    </form>
-
-    
+        <div class="contactme">
+            <h2 class="headline">Свяжитесь со мной!</h2>
+            <form>
+                <div class="line">
+                    <div class="group">
+                        <label for="text">Ваше Имя</label>
+                        <input type="text" id="text" placeholder="Георгий">
+                    </div>
+                    <div class="group">
+                        <label for="email">Ваш Email</label>
+                        <input type="email" id="email" placeholder="pochta@yandex.ru">
+                    </div>
+                    <div class="group">
+                        <label for="message">Ваше Сообщение</label>
+                        <textarea name="message" id="message" cols="30" rows="3" placeholder="Пиши прямо здесь" ></textarea>
+                    </div>
+                </div>
+                
+        
+                <button type="submit" class="btn">Отправить форму</button>
+            </form>
+        </div>
+    </div>    
   </body>
 </html>

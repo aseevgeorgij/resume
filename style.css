@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #556B2F;
+    background-color: #FFFFF0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1024px;
+    
+}
+
+.photo {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.info {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 811px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.info .text {
+    margin-left: 40px;
+}
+
+.headline {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+.hobby {
+    border: 3px solid #bdadad;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list li {
+    margin-bottom: 5px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table tr:nth-child(1) {
+    color: #9ACD32;
+}
+.table tr:nth-child(2) {
+    color: #BDB76B;
+}
+.table tr:nth-child(3) {
+    color: #D2691E;
+}
+
+
+.job {
+    border: 3px solid #bdadad;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.contactme {
+    border: 3px solid #bdadad;
+    border-radius: 15px;
+    padding: 20px
+}
+
+
+
+.contactme h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.group label {
+    display: block;
+}
+
+.group input,
+.group textarea {
+    border: 0;
+    background: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #bdadad;
+    font-family: inherit;
+    outline: none;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+.line .group {
+    display: inline-block;
+    width: calc(50% - 20px);
+}
+
+.line .group:nth-child(1) {
+    margin-right: 30px;
+}
+
+@media (max-width: 600px) {
+    .line .group {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+   
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    padding: 20px;
+    border: 1px;
+    border-radius: 5px;
+    background: #A52A2A;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn:hover {
+   opacity: .8;
+   cursor: pointer;
+}
+
